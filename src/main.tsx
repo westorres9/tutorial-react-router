@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="expenses" element={<Expenses />} />
-        <Route path="invoices/" element={<Invoices />}>
+        <Route path="invoices" element={<Invoices />}>
           <Route path=":invoiceId" element={<Invoice />}/>
         </Route>
         <Route path="*" element={<NotFound/>}/>
